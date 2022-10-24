@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.dianping.cat</groupId>
 	<artifactId>parent</artifactId>
@@ -144,17 +142,17 @@
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.1.42.Final</version>
+				<version>4.1.68.Final</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.code.gson</groupId>
 				<artifactId>gson</artifactId>
-				<version>2.3.1</version>
+				<version>2.8.9</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpclient</artifactId>
-				<version>4.5.3</version>
+				<version>4.5.13</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
@@ -246,7 +244,7 @@
 						<includes>
 							<include>**/AllTests.java</include>
 						</includes>
-						<!-- <debugForkedProcess>-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 -Xnoagent -Djava.compiler=NONE</debugForkedProcess> -->
+						
 					</configuration>
 					<dependencies>
 						<dependency>
@@ -265,20 +263,20 @@
 						<additionalConfig>
 							<file>
 								<name>.settings/org.eclipse.jdt.core.prefs</name>
-								<content><![CDATA[
+								<content>
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
 eclipse.preferences.version=1
 org.eclipse.jdt.core.compiler.source=1.8
 org.eclipse.jdt.core.compiler.compliance=1.8
-                        ]]></content>
+                        </content>
 							</file>
 							<file>
 								<name>.settings/org.eclipse.core.resources.prefs</name>
 								<content>
-									<![CDATA[
+									
                                 eclipse.preferences.version=1
-                                encoding/<project>=UTF-8
-                                ]]>
+                                encoding/&lt;project&gt;=UTF-8
+                                
 								</content>
 							</file>
 						</additionalConfig>
